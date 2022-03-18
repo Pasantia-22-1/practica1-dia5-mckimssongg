@@ -1,21 +1,4 @@
-class DispositivoEntrada{
-    constructor(tipoEntrada, marca){
-        this._tipoEntrada = tipoEntrada;
-        this._marca = marca;
-    }
-    get tipoEntrada(){
-        return this._tipoEntrada;
-    }
-    set tipoEntrada(tipoEntrada){
-        this._tipoEntrada = tipoEntrada;
-    }
-    get marca(){
-        this._marca;
-    }
-    set marca(marca){
-        this._marca = marca;
-    }
-}
+
 
 class Monitor extends DispositivoEntrada{ //Herencia
     static contadorMonitores = 0
@@ -38,7 +21,6 @@ class Monitor extends DispositivoEntrada{ //Herencia
     }
 }
 
-const MonitorRazer = new Monitor("USB.3", "Razer")
-console.log(MonitorRazer.toString());
+const MonitorRazer = new Monitor("USB.3", "Razer", "27")
+// console.log(MonitorRazer.toString());
 
-module.exports = {Monitor, MonitorRazer}

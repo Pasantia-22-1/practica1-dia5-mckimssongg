@@ -7,10 +7,71 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <title>Document</title>
 </head>
-<body>
-    
+<body class="bg-dark">
+    <div id="divMamadisimo" class="d-flex justify-content-center bg-dark text-white">
+        <div class="m-5 shadow-lg border rounded border-dark p-5 w-100">
+            <h1 class="text-center">POO de PCs</h1>
+            <form action="" id="forma" >
+                <!-- Raton---------------------------------- -->
+                <legend>Raton</legend>
+                <div class="m-3">
+                    <label for="marcaRaton ">Marca del raton</label> 
+                    <input class="form-control"  type="text" placeholder="Ingrese la marca del raton" id="marcaRaton" value="Prueba">
+                </div>
+                <div class="m-3">
+                    <label for="conexionRaton">Tipo de conexion</label> 
+                    <input type="text" placeholder="Ingrese el tipo de conexion" class="form-control" id="conexionRaton" value="Prueba">
+                </div>
+                <!-- Teclado------------------------------------ -->
+                <legend>Teclado</legend>
+                <div class="m-3">
+                    <label for="marcaTaclado">Marca del teclado </label> 
+                    <input type="text" placeholder="Ingrese la marca del teclado"  class="form-control" id="marcaTaclado" value="Prueba">
+                </div>
+                <div class="m-3">
+                    <label for="conexionTeclado">Tipo de conexion</label> 
+                    <input type="text" placeholder="Ingrese el tipo de conexion" class="form-control" id="conexionTeclado" value="Prueba">
+                </div>
+                <!-- Monitor----------------------------------------- -->
+                <legend>Monitor</legend>
+                <div class="m-3">
+                    <label for="marcaMonitor">Marca del Monitor</label> 
+                    <input type="text" placeholder="Ingrese la marca del Monitor"  class="form-control" id="marcaMonitor"value="Prueba">
+                </div>
+                <div class="m-3">
+                    <label for="conexionMonitor">Tipo de conexion</label> 
+                    <input type="text" placeholder="Ingrese el tipo de conexion" class="form-control" id="conexionMonitor"value="Prueba">
+                </div>
+                <div class="m-3">
+                    <label for="tamañoMonitor">Tamaño de la pantalla</label> 
+                    <input type="text" placeholder="Ingrese el tipo de conexion"  class="form-control" id="tamañoMonitor"value="Prueba">
+                </div>
+                <!-- Modelo PC -->
+                <legend>Marca de PC</legend>
+                <div class="m-3">
+                    <label for="modeloPC">Marca</label> 
+                    <input class="form-control"  type="text" placeholder="Ingresa nombre" id="modeloPC" value="Prueba">
+                </div>
+            </form>
+            <div class="d-flex btn-group" role="group" aria-label="Basic outlined example">
+                <button class="btn btn-outline-primary" onclick="valores()">Ver pedido</button>
+                <!-- <button class="btn btn-outline-dark" onclick="resta()">Resta</button> -->
+                <button class="btn btn-outline-danger" onclick="resetear()">Resetear</button> 
+            </div>
+            <!-- <div id="resultado" class="m-3">----Resultado-----</div> -->
+        </div>
+    </div>s
 
+
+    <!-- Scripts ----------------------------- -->
+    <script src="./JS/index.js"></script>
+    <script src="./JS/ClaseDispositivosEntrada.js"></script>
+    <script src="./JS/ClaseRaton.js"></script>
+    <script src="./JS/ClaseTeclado.js"></script>
+    <script src="./JS/ClaseMonitor.js"></script>
+    <script src="./JS/ClaseComputadora.js"></script>
     <script src="./JS/ClaseOrden.js"></script>
+    <script src="./JS/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 </html>

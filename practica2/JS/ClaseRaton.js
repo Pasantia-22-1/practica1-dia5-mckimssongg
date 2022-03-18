@@ -1,21 +1,5 @@
-class DispositivoEntrada{
-    constructor(tipoEntrada, marca){
-        this._tipoEntrada = tipoEntrada;
-        this._marca = marca;
-    }
-    get tipoEntrada(){
-        return this._tipoEntrada;
-    }
-    set tipoEntrada(tipoEntrada){
-        this._tipoEntrada = tipoEntrada;
-    }
-    get marca(){
-        this._marca;
-    }
-    set marca(marca){
-        this._marca = marca;
-    }
-}
+
+
 class Raton extends DispositivoEntrada{ //Herencia
     static contadorRatones = 0
     constructor(tipoEntrada, marca){
@@ -31,4 +15,4 @@ class Raton extends DispositivoEntrada{ //Herencia
 }
 
 const RatonRedragon = new Raton("USB", "REDDRAGON")
-console.log(RatonRedragon.toString());
+// console.log(RatonRedragon.toString());

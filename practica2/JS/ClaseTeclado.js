@@ -1,21 +1,4 @@
-class DispositivoEntrada{
-    constructor(tipoEntrada, marca){
-        this._tipoEntrada = tipoEntrada;
-        this._marca = marca;
-    }
-    get tipoEntrada(){
-        return this._tipoEntrada;
-    }
-    set tipoEntrada(tipoEntrada){
-        this._tipoEntrada = tipoEntrada;
-    }
-    get marca(){
-        this._marca;
-    }
-    set marca(marca){
-        this._marca = marca;
-    }
-}
+
 
 class Teclado extends DispositivoEntrada{ //Herencia
     static contadorTeclado = 0
@@ -32,4 +15,4 @@ class Teclado extends DispositivoEntrada{ //Herencia
 }
 
 const TecladoG203 = new Teclado("USB.3", "Logitech")
-console.log(TecladoG203.toString());
+// console.log(TecladoG203.toString());
