@@ -40,14 +40,33 @@ function valores(){
             <h3>Marca Pc: ${pcName._nombre}</h3>
             </div>
             <div class="d-flex btn-group" role="group" aria-label="Basic outlined example">
-                <button class="btn btn-outline-danger" onclick="backScreen()">Resetear</button> 
+                <button class="btn btn-outline-danger" onclick="backScreen()">Volver al inicio</button> 
+            </div>
+            <div class="m-5 d-flex btn-group" role="group" aria-label="Basic outlined example">
+                <button class="btn btn-outline-danger" onclick="TodasLasCompus()">Ver todas las Pcs</button> 
             </div>
         </div>
     `;
 }
 
+
 function backScreen() {
     divMamadisimo.innerHTML = pantallaPrincipal
+}
+
+
+function TodasLasCompus(){
+    divMamadisimo.innerHTML = `
+    <div class="m-5 shadow-lg border rounded border-dark p-5 w-100 vh-100">
+        <h1 class="text-center">POO de PCs</h1>
+        <div class="shadow-lg border rounded border-dark p-5">
+        ${Ordenn.mostrarOrden()}
+        </div>
+        <div class="d-flex btn-group" role="group" aria-label="Basic outlined example">
+            <button class="btn btn-outline-danger" onclick="backScreen()">Volver al inicio</button> 
+        </div>
+    </div>
+    `
 }
 
 function resetear(){

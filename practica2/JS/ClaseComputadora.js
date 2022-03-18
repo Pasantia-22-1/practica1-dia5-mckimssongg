@@ -34,7 +34,7 @@ class Computadora{
         this._raton = raton;
     }
     toString(){
-        return `Computadora ${this._idComputadora} => [Nombre: ${this._nombre}, Monitor: ${this._monitor}, Teclado: ${this._teclado}, Raton: ${this._raton}]`;
+        return `<h4>Computadora ${this._idComputadora} => <br>Nombre: ${this._nombre}, Monitor: ${this._monitor}, Teclado: ${this._teclado}, Raton: ${this._raton}</h4>`;
     }
 
 }

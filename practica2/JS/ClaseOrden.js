@@ -14,9 +14,9 @@ class Orden{
     mostrarOrden(){
         var orden = ""
         for(let pc in this._computadoras){
-            orden += this._computadoras[pc].toString()
+            orden += `${this._computadoras[pc].toString()}<br>`
         }
-        return console.log(orden);
+        return orden;
     }
 }
 const Ordenn = new Orden()
